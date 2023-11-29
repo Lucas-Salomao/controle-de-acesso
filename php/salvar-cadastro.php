@@ -17,10 +17,12 @@ if ($conn->connect_error) {
 // Fechar a conexão com o banco de dados
 $conn->close();
 
-include('html/index.html');
-// Carregar os arquivos CSS e JavaScript
-#include_once("/css/style.css");
-#include_once("/js/script.js");
+// Obter os dados do formulário
+$tag = $_POST["tag"];
+$nome = $_POST["nome"];
+$cpf = $_POST["cpf"];
+$sexo = $_POST["sexo"];
+$chefia = $_POST["chefia"];
+$departamento = $_POST["departamento"];
+
 ?>
-
-
