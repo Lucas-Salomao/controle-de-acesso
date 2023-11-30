@@ -63,13 +63,13 @@ if ($conn->connect_error) {
       <div class="campo">
         <label for="departamento">Departamento:</label>
         <select name="departamento" id="departamento">
-          <option value="RH">RH</option>
-          <option value="FINANCEIRO">FINANCEIRO</option>
-          <option value="COMPRAS">COMPRAS</option>
-          <option value="ENGENHARIA">ENGENHARIA</option>
-          <option value="EXPEDIÇÃO">EXPEDIÇÃO</option>
-          <option value="ALMOXARIFADO">ALMOXARIFADO</option>
-          <option value="PRODUÇÃO">PRODUÇÃO</option>
+          <option value="1">RH</option>
+          <option value="2">FINANCEIRO</option>
+          <option value="3">COMPRAS</option>
+          <option value="4">ENGENHARIA</option>
+          <option value="5">EXPEDIÇÃO</option>
+          <option value="6">ALMOXARIFADO</option>
+          <option value="7">PRODUÇÃO</option>
         </select>
       </div>
 
