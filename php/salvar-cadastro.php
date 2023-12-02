@@ -31,11 +31,11 @@ if (isset($_FILES['foto']) && $_FILES['foto']['error'] == 0) {
 
   // Verificar se a operação foi bem-sucedida
   if ($stmt) {
-    echo "Dados salvos com sucesso!";
+    echo "Dados salvos com sucesso na tabela pessoa!";
     // Redirecionar o usuário para outra página
 
     // Inserir os dados na tabela cadastro
-    $sql2 = "INSERT INTO cadastro (tag, cpf) VALUES (?,?)";
+    $sql2 = "INSERT INTO cadastro (tag_id, fk_cpf) VALUES (?,?)";
     $stmt2 = $conn->prepare($sql2);
     $stmt2->execute([$tag, $cpf]);
 
